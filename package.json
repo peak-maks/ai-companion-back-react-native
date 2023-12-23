@@ -3,9 +3,9 @@
   "version": "1.2.0",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "node api.js && ts-node src/index.ts",
     "seed": "ts-node src/seed.ts",
-    "dev": "nodemon src/index.ts",
+    "dev": "node api.js && nodemon src/index.ts",
     "build": "tsc",
     "lint": "eslint --fix src test",
     "typecheck": "tsc --noEmit"
@@ -21,6 +21,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.0.0",
     "morgan": "^1.10.0",
+    "node-fetch": "^3.3.2",
     "openai": "^4.17.4",
     "postmark": "^4.0.2"
   },
